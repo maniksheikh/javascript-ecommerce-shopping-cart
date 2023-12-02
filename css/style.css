@@ -63,7 +63,7 @@ section {
     min-height: 100vh;
     padding: 20px;
     box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
-    transition: 0.3s;
+    transition:3ms;
 }
 .cart.active {
     right: 0;
@@ -211,7 +211,7 @@ section {
 .btn {
     cursor: pointer;
     font-size: 15px;
-    padding: 4px 5px;
+    padding: 6px 6px;
     border-radius: 5px;
     background: rgb(13, 184, 13);
     color: var(--bg-color);
