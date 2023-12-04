@@ -204,7 +204,7 @@ section {
   text-align: center;
   justify-content: center;
 }
-.btn {
+button {
   display: inline;
   margin-left: 12em;
   cursor: pointer;
@@ -219,7 +219,7 @@ section {
   margin-top: -7px;
   margin-bottom: 5px;
 }
-.btn:hover {
+button:hover {
   background: var(--main-color);
   transition: 2s;
 }
