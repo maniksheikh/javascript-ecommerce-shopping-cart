@@ -33,7 +33,20 @@ function cartRemoveItem() {
     var button = addCart[i];
     button.addEventListener("click", addCartClick);
   }
+  // Byu Button work 
+   document.getElementsByClassName('btn-buy')[0].addEventListener('click', buyButtonClicked)
 }
+// Buy button
+  function buyButtonClicked() {
+    alert('Your Order is Placed')
+    var cartContent = document.getElementsByClassName('cart-content')[0]
+    while(cartContent.hasChildNodes()) {
+      cartContent.removeChild(cartContent.firstChild);
+    }
+    updateTotal();
+  } 
+
+
 function removeCartItems(event) {
   var buttonClicked = event.target;
   buttonClicked.parentElement.remove();
@@ -49,6 +62,7 @@ function quantityChanged(event) {
   }
   updateTotal();
 }
+
 
 // Add To Cart
 function addCartClick(event) {
@@ -68,8 +82,8 @@ function addProductToCart(productImg, title, price) {
   var cartItems = document.getElementsByClassName("cart-content")[0];
   var cartItemsName = cartItems.getElementsByClassName("cart-product-title");
   for (var i = 0; i < cartItemsName.length; i++) {
-    alert("You have already added this product to the cart");
-    return;
+    // alert("You have already added this product to the cart");
+    // return;
   }
 
   var cartBoxContent = `
@@ -105,9 +119,10 @@ function updateTotal() {
     var price = parseFloat(priceElement.innerText.replace("$", ""));
     var quantity = quantityElement.value;
     total = total + price * quantity;
+  }
     //  If price Contain some cents value
     total = Math.round(total * 100) / 100;
 
     document.getElementsByClassName("total-price")[0].innerText = "$" + total;
-  }
+ 
 }
