@@ -10,15 +10,34 @@
   <body>
     <header>
       <div class="nav container">
-        <a href="#" class="logo">Ecommerce</a>
-        <box-icon name="shopping-bag" id="cart-icon"></box-icon>
+        <div class="navbar">
+          <div class="logo">
+            <img src="/img/logo-img.jpg" width="100px" />
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Products</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="">Account</a></li>
+            </ul>
+          </nav>
+          <img
+            src="/img/shopping-cart-logo-or-icon-design-vector.jpg"
+            id="cart-icon"
+          />
+          <img
+            src="/img/menu-line-icon.jpg"
+            class="menu-img"
+            onclick="menutoggle()"
+          />
+        </div>
         <!-- cart-box -->
         <div class="cart">
           <h2 class="cart-title">Your Cart</h2>
           <!-- Content  -->
-          <div class="cart-content">
-
-          </div>
+          <div class="cart-content"></div>
           <!-- Total -->
           <div class="total">
             <div class="total-title">Total</div>
@@ -32,28 +51,204 @@
       </div>
     </header>
 
+    <!-- Produc section here  -->
     <section class="shop container">
-      <h2 class="section-title">Shop Products</h2>
+      <h2 class="section-title">Featured Shop Products</h2>
     </section>
     <div class="shop-content">
       <!-- Box-1  -->
       <div class="product-details">
         <img src="./img/blazer-img.jpg" alt="blazer-img" class="product-img" />
         <h2 class="product-title">Portland Trail Blazers</h2>
+        <div class="rating">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m8.85 17.825l3.15-1.9l3.15 1.925l-.825-3.6l2.775-2.4l-3.65-.325l-1.45-3.4l-1.45 3.375l-3.65.325l2.775 2.425zM5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275zM12 13.25"
+            />
+          </svg>
+        </div>
         <span class="price">$ 48</span>
         <button class="add-cart">Order Here</button>
       </div>
-        <!-- Box-2  -->
-        <div class="product-details">
-          <img src="./img/Yamaha R15M-9-img.jpg" alt="blazer-img" class="product-img" />
-          <h2 class="product-title">Yamaha-R15</h2>
-          <span class="price">$ 248</span>
-          <button class="add-cart">Order Here</button>
+      <!-- Box-2  -->
+      <div class="product-details">
+        <img
+          src="./img/Yamaha R15M-9-img.jpg"
+          alt="blazer-img"
+          class="product-img"
+        />
+        <h2 class="product-title">Yamaha-R15</h2>
+        <div class="rating">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m8.85 17.825l3.15-1.9l3.15 1.925l-.825-3.6l2.775-2.4l-3.65-.325l-1.45-3.4l-1.45 3.375l-3.65.325l2.775 2.425zm-1.525 2.098l1.24-5.313l-4.123-3.572l5.431-.47L12 5.557l2.127 5.01l5.43.47l-4.122 3.572l1.24 5.313L12 17.102zM12 13.25"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275z"
+            />
+          </svg>
         </div>
+        <span class="price">$ 248</span>
+        <button class="add-cart">Order Here</button>
+      </div>
       <!-- Box-3  -->
       <div class="product-details">
         <img src="./img/watch-img.jpg" alt="watch-img" class="product-img" />
         <h2 class="product-title">Timeless Elegance</h2>
+        <div class="rating">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m8.85 17.825l3.15-1.9l3.15 1.925l-.825-3.6l2.775-2.4l-3.65-.325l-1.45-3.4l-1.45 3.375l-3.65.325l2.775 2.425zM5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275zM12 13.25"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m8.85 17.825l3.15-1.9l3.15 1.925l-.825-3.6l2.775-2.4l-3.65-.325l-1.45-3.4l-1.45 3.375l-3.65.325l2.775 2.425zM5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275zM12 13.25"
+            />
+          </svg>
+        </div>
         <span class="price">$ 35</span>
         <button class="add-cart">Order Here</button>
       </div>
@@ -65,6 +260,63 @@
           class="product-img"
         />
         <h2 class="product-title">Headspace Horizons</h2>
+        <div class="rating">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m8.85 17.825l3.15-1.9l3.15 1.925l-.825-3.6l2.775-2.4l-3.65-.325l-1.45-3.4l-1.45 3.375l-3.65.325l2.775 2.425zm-1.525 2.098l1.24-5.313l-4.123-3.572l5.431-.47L12 5.557l2.127 5.01l5.43.47l-4.122 3.572l1.24 5.313L12 17.102zM12 13.25"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m8.85 17.825l3.15-1.9l3.15 1.925l-.825-3.6l2.775-2.4l-3.65-.325l-1.45-3.4l-1.45 3.375l-3.65.325l2.775 2.425zM5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275zM12 13.25"
+            />
+          </svg>
+        </div>
         <span class="price">$ 14</span>
         <button class="add-cart">Order Here</button>
       </div>
@@ -76,6 +328,63 @@
           class="product-img"
         />
         <h2 class="product-title">Casual Chic Comfort</h2>
+        <div class="rating">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m8.85 17.825l3.15-1.9l3.15 1.925l-.825-3.6l2.775-2.4l-3.65-.325l-1.45-3.4l-1.45 3.375l-3.65.325l2.775 2.425zm-1.525 2.098l1.24-5.313l-4.123-3.572l5.431-.47L12 5.557l2.127 5.01l5.43.47l-4.122 3.572l1.24 5.313L12 17.102zM12 13.25"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m8.85 17.825l3.15-1.9l3.15 1.925l-.825-3.6l2.775-2.4l-3.65-.325l-1.45-3.4l-1.45 3.375l-3.65.325l2.775 2.425zM5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275zM12 13.25"
+            />
+          </svg>
+        </div>
         <span class="price">$ 25</span>
         <button class="add-cart">Order Here</button>
       </div>
@@ -87,18 +396,70 @@
           class="product-img"
         />
         <h2 class="product-title">Mackbook-Proo</h2>
+        <div class="rating">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24" >
+            <path
+              fill="currentColor"
+              d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m8.85 17.825l3.15-1.9l3.15 1.925l-.825-3.6l2.775-2.4l-3.65-.325l-1.45-3.4l-1.45 3.375l-3.65.325l2.775 2.425zM5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275zM12 13.25"
+            />
+          </svg>
+        </div>
         <span class="price">$ 114</span>
         <button class="add-cart">Order Here</button>
       </div>
-      <!-- Box-7  -->
-      <div class="product-details">
-        <img src="./img/shoes-img.jpeg" alt="shoes-img" class="product-img" />
-        <h2 class="product-title">The Art of Walking</h2>
-        <span class="price">$ 57</span>
-        <button class="add-cart">Order Here</button>
-      </div>
-      <!-- Box-8 -->
-      <div class="product-details">
+    </div>
+  <br>
+  <h2 class="product-header">Latest Products</h2>
+    <div class="latest-section">
+      <div class="product-latest-details">
         <img
           src="./img/external-img.jpg"
           alt="external-img"
@@ -109,7 +470,7 @@
         <button class="add-cart">Order Here</button>
       </div>
       <!-- Box-9  -->
-      <div class="product-details">
+      <div class="product-latest-details">
         <img
           src="./img/sunglass-img.jpg"
           alt="sunglass-img"
@@ -120,28 +481,28 @@
         <button class="add-cart">Order Here</button>
       </div>
       <!-- Box-10  -->
-      <div class="product-details">
+      <div class="product-latest-details">
         <img src="./img/phone-img.jpg" alt="phone-img" class="product-img" />
         <h2 class="product-title">The Art of iPhone graphy</h2>
         <span class="price">$ 94</span>
         <button class="add-cart">Order Here</button>
       </div>
       <!-- Box-11  -->
-      <div class="product-details">
+      <div class="product-latest-details">
         <img src="./img/camera-img.jpg" alt="camera-img" class="product-img" />
         <h2 class="product-title">Canon Chronicles</h2>
         <span class="price">$ 86</span>
         <button class="add-cart">Order Here</button>
       </div>
       <!-- Box-12  -->
-      <div class="product-details">
+      <div class="product-latest-details">
         <img src="./img/bag-img.jpg" alt="bag-img" class="product-img" />
         <h2 class="product-title">The Art of Bagology</h2>
         <span class="price">$ 49</span>
         <button class="add-cart">Order Here</button>
       </div>
       <!-- Box-13  -->
-      <div class="product-details">
+      <div class="product-latest-details">
         <img
           src="./img/bodySpray-img.jpg"
           alt="bodySpray-img"
@@ -151,8 +512,8 @@
         <span class="price">$ 13</span>
         <button class="add-cart">Order Here</button>
       </div>
-       <!-- Box-14  -->
-       <div class="product-details">
+      <!-- Box-14  -->
+      <div class="product-latest-details">
         <img
           src="./img/loson-img.jpg"
           alt="bodySpray-img"
@@ -162,8 +523,8 @@
         <span class="price">$ 133</span>
         <button class="add-cart">Order Here</button>
       </div>
-       <!-- Box-15  -->
-       <div class="product-details">
+      <!-- Box-15  -->
+      <div class="product-latest-details">
         <img
           src="./img/stock-img.jpeg"
           alt="bodySpray-img"
@@ -173,8 +534,8 @@
         <span class="price">$ 84</span>
         <button class="add-cart">Order Here</button>
       </div>
-       <!-- Box-16  -->
-       <div class="product-details">
+      <!-- Box-16  -->
+      <div class="product-latest-details">
         <img
           src="./img/fruits-img.jpg"
           alt="bodySpray-img"
@@ -183,6 +544,99 @@
         <h2 class="product-title">Fruit Title Stock Photos</h2>
         <span class="price">$ 133</span>
         <button class="add-cart">Order Here</button>
+      </div>
+    </div>
+<br>
+    <!-- Testimonial section  -->
+    <h2 class="product-header">Review Me</h2>
+    <div class="testimonial">
+      <div class="testimonial-section">
+         <div class="row">
+           <div class="col-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"  viewBox="0 0 16 16"><path fill="currentColor" d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054c.062-.372.166-.703.31-.992c.145-.29.331-.517.559-.683c.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992a4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054c.062-.372.166-.703.31-.992c.145-.29.331-.517.559-.683c.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992a4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/></svg>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+              Voluptatum beatae officia vel, magni quo architecto ab quasi. <br>
+               Minima, fugiat minus?</p>
+               <div class="rating">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m8.85 17.825l3.15-1.9l3.15 1.925l-.825-3.6l2.775-2.4l-3.65-.325l-1.45-3.4l-1.45 3.375l-3.65.325l2.775 2.425zm-1.525 2.098l1.24-5.313l-4.123-3.572l5.431-.47L12 5.557l2.127 5.01l5.43.47l-4.122 3.572l1.24 5.313L12 17.102zM12 13.25"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m8.85 17.825l3.15-1.9l3.15 1.925l-.825-3.6l2.775-2.4l-3.65-.325l-1.45-3.4l-1.45 3.375l-3.65.325l2.775 2.425zM5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275zM12 13.25"/></svg>
+              </div>
+              <img src="/img/elizabeth-img.jpg" >
+              <h3>Sean Parker</h3>
+           </div>
+           <div class="col-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"  viewBox="0 0 16 16"><path fill="currentColor" d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054c.062-.372.166-.703.31-.992c.145-.29.331-.517.559-.683c.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992a4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054c.062-.372.166-.703.31-.992c.145-.29.331-.517.559-.683c.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992a4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/></svg>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+              Voluptatum beatae officia vel, magni quo architecto ab quasi. <br>
+               Minima, fugiat minus?</p>
+               <div class="rating">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m8.85 17.825l3.15-1.9l3.15 1.925l-.825-3.6l2.775-2.4l-3.65-.325l-1.45-3.4l-1.45 3.375l-3.65.325l2.775 2.425zm-1.525 2.098l1.24-5.313l-4.123-3.572l5.431-.47L12 5.557l2.127 5.01l5.43.47l-4.122 3.572l1.24 5.313L12 17.102zM12 13.25"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275z"/></svg>
+              </div>
+              <img src="/img/my-pic.jpg" >
+              <h3>Manik Sheikh</h3>
+           </div>
+           <div class="col-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"  viewBox="0 0 16 16"><path fill="currentColor" d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054c.062-.372.166-.703.31-.992c.145-.29.331-.517.559-.683c.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992a4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054c.062-.372.166-.703.31-.992c.145-.29.331-.517.559-.683c.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992a4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/></svg>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+              Voluptatum beatae officia vel, magni quo architecto ab quasi. <br>
+               Minima, fugiat minus?</p>
+               <div class="rating">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m8.85 17.825l3.15-1.9l3.15 1.925l-.825-3.6l2.775-2.4l-3.65-.325l-1.45-3.4l-1.45 3.375l-3.65.325l2.775 2.425zM5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275zM12 13.25"/></svg>                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m8.85 17.825l3.15-1.9l3.15 1.925l-.825-3.6l2.775-2.4l-3.65-.325l-1.45-3.4l-1.45 3.375l-3.65.325l2.775 2.425zM5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275zM12 13.25"/></svg>
+              </div>
+              <img src="/img/john-doe-img.jfif" >
+              <h3>John Doe</h3>
+           </div>
+         </div>
+      </div>
+     </div>
+
+     <!-- Footer Section  -->
+     <div class="footer">
+      <div class="container">
+        <div class="footer-row">
+          <div class="footer-col-1">
+            <h1>Download Our App.</h1>
+            <p>Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                   <img src="/img/google-play-store-apple-app-img.jpg">
+                  </div>  
+          </div>
+          <div class="footer-col-2">
+             <img src="/img/store-images.jfif">
+            <p>Our Purpose Is To Sustainably Make the Pleasure <br>
+               and Benefits of Sports to the Many.</p>
+          </div>
+          <div class="footer-col-3">
+            <h1>Useful Links</h1>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h1>Follow Us</h1>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>YouTube</li>
+              <li>Instarram</li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright &copy; 2023 - Manik</p>
       </div>
     </div>
 

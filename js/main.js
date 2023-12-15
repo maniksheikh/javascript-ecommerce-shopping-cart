@@ -1,3 +1,19 @@
+// Menu bar section 
+var menuItems = document.getElementById('MenuItems');
+
+menuItems.style.maxHeight = "0px";
+
+function menutoggle() {
+    if( menuItems.style.maxHeight == "0px") {
+
+        menuItems.style.maxHeight = "200px";
+    } else {
+        menuItems.style.maxHeight = "0px";
+    }
+};
+
+// Main function here 
+
 let cartIcon = document
   .getElementById("cart-icon")
   .addEventListener("click", function () {
