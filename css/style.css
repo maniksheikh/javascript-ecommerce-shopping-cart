@@ -23,20 +23,28 @@ body {
   color: var(--text-color);
 }
 .container {
-  max-width: 1068px;
+  max-width: 1100px;
   margin: auto;
   width: 100%;
 }
+
 .navbar {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f3ecec;
+  z-index: 1;
+  box-shadow: 0 0 10px hsl(0 4% 15% / 10%);
 }
+
 .logo {
-  width: 100px;
+  width: 70px;
   margin-top: 10px;
-  /* height: 100px; */
-  /* margin-top: 25px; */
   cursor: pointer;
   overflow: hidden;
   border-radius: 5px;
@@ -75,7 +83,7 @@ p {
 }
 .cart {
   position: fixed;
-  top: 0;
+  top: 60px;
   right: -100%;
   background: var(--bg-color);
   width: 360px;
@@ -177,14 +185,13 @@ p {
 
 /* Produnt section */
 .shop {
-  margin-top: 2rem;
-  padding:0 5px;
+  margin-top: 7rem;
 }
 .section-title {
   font-size: 3.1rem;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 1.7rem;
+  margin-bottom: 2rem;
 }
 .shop-content {
   max-width: 1100px;
@@ -193,7 +200,7 @@ p {
   justify-items: center;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap:20px !important;
+  gap: 20px !important;
 }
 .product-details {
   width: 350px;
@@ -222,7 +229,7 @@ p {
   padding: 2px 5px;
 }
 .price {
-    padding: 2px 6px;
+  padding: 2px 6px;
   font-size: 17px;
   font-weight: 600;
 }
@@ -243,8 +250,8 @@ button {
   outline: none;
   font-weight: medium;
   border: none;
-   /* margin-top: -5px; */
-   margin-bottom: 5px; 
+  /* margin-top: -5px; */
+  margin-bottom: 5px;
 }
 button:hover {
   background: coral !important;
@@ -255,13 +262,13 @@ button:hover {
 
 /* latest section */
 .latest-section {
-  max-width: 1080px;
+  max-width: 1100px;
   margin: auto;
   align-items: center;
   justify-items: center;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap:20px !important;
+  gap: 20px !important;
 }
 .latest-section .product-details {
   transition: transform 0.5s;
@@ -271,6 +278,7 @@ button:hover {
   cursor: pointer;
 }
 .product-header {
+  max-width: 1100px;
   text-align: center;
   margin: 0 auto 70px;
   font-size: 40px;
@@ -304,12 +312,10 @@ button:hover {
 }
 
 /* testimonial */
+
 .testimonial {
-  padding-top: 50px;
-}
-.testimonial-section {
   width: 1100px;
-    margin: auto;
+  margin: auto;
 }
 .row {
   display: grid;
@@ -337,11 +343,10 @@ button:hover {
   margin: 12px 0;
 }
 .testimonial-section .col-3 h3 {
-    font-weight: 600;
-    color: #555;
-    font-size: 18px;
+  font-weight: 600;
+  color: #555;
+  font-size: 18px;
 }
-
 
 /* Footer section */
 .footer {
@@ -355,7 +360,7 @@ button:hover {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  margin-top:40px;
+  margin-top: 40px;
 }
 .footer p {
   color: #8a8a8a;
@@ -364,7 +369,10 @@ button:hover {
   color: #fff;
   margin-bottom: 20px;
 }
-.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4 {
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4 {
   min-width: 250px;
   margin-bottom: 20px;
 }
@@ -388,7 +396,8 @@ button:hover {
   cursor: pointer;
   border-radius: 8px;
 }
-.footer-col-3, .footer-col-4 {
+.footer-col-3,
+.footer-col-4 {
   flex-basis: 12%;
   text-align: center;
   line-height: 2.5;
@@ -408,18 +417,18 @@ ul {
 }
 
 /* Media query for menu  */
-@media only screen  and (max-width:800px){
+@media only screen and (max-width: 800px) {
   nav ul {
     position: absolute;
     background: #333;
-    top:70px;
+    top: 70px;
     left: 0;
     width: 100%;
     overflow: hidden;
     transition: max-height 0.5s;
   }
   nav ul li {
-    display:block;
+    display: block;
     margin-right: 50px;
     margin-top: 15px;
     margin-bottom: 10px;
@@ -440,7 +449,7 @@ ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  .product-details  {
+  .product-details {
     width: 320px;
   }
   button {
@@ -466,27 +475,28 @@ ul {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     text-align: center;
-}
-.footer {
-  margin-top: 15px;
-  border-radius: 5px;
-  height: 100%;
-  margin:20px  auto;
-}
+  }
+  .footer {
+    margin-top: 15px;
+    border-radius: 5px;
+    height: 100%;
+    margin: 20px auto;
+  }
   .footer-row {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4 {
+  .footer-col-1,
+  .footer-col-2,
+  .footer-col-3,
+  .footer-col-4 {
     margin-top: -30px;
     font-size: 14px;
     line-height: 1;
   }
-
 }
 
-
-@media only screen  and (max-width:600px) {
+@media only screen and (max-width: 600px) {
   .logo {
     width: 50px;
     height: 50px;
@@ -500,7 +510,7 @@ ul {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
-  .product-details  {
+  .product-details {
     width: 300px;
   }
   button {
@@ -516,6 +526,9 @@ ul {
     margin-top: -15px;
     margin-bottom: 10px;
   }
+  .product-title{
+    text-decoration: lowercase;
+  }
   .product-latest-details {
     width: 300px;
   }
@@ -523,23 +536,31 @@ ul {
     width: 300px;
   }
   .row {
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+  }
+  .testimonial-section .row .col-3 {
     text-align: center;
-}
-.footer {
-  width: 300px;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  margin-top: 15px;
-  border-radius: 5px;
-}
+    align-items: center;
+    justify-content: center;
+  }
+  .footer {
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 5px;
+  }
   .footer-row {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
-  .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4 {
+  .footer-col-1,
+  .footer-col-2,
+  .footer-col-3,
+  .footer-col-4 {
     margin-top: -30px;
     font-size: 14px;
     line-height: 1;
