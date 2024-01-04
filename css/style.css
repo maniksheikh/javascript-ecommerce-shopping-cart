@@ -42,7 +42,7 @@ body {
   background-color: #f3ecec;
   z-index: 1;
   box-shadow: 0 0 10px hsl(0 4% 15% / 10%);
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
 
 .logo {
@@ -65,7 +65,10 @@ nav ul li {
   margin-right: 20px;
   font-size: 18px;
   font-weight: 550;
+  transition: 0.3s ease;
 }
+
+
 #cart-icon {
   width: 50px;
   height: 50px;
@@ -185,6 +188,53 @@ p {
   cursor: pointer;
 }
 
+/* Home section  */
+#home {
+  background-image: url(/img/homesection-img.jpeg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top 60px center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.container {
+  width: 1080px;
+  margin: auto;
+}
+.container h5 , p {
+  color: white;
+}
+#home span {
+  color: coral;
+}
+.container h1 {
+  font-size: 2rem;
+  color: white;
+}
+.container  span {
+    color: white;
+}
+#home .home-btn {
+    background: var(--main-color);
+    color: var(--bg-color);
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 7px;
+    cursor: pointer;
+    outline: 0;
+    padding: 10px 17px;
+    border: none;
+    margin-top: 20px;
+    align-items: flex-start;
+}
+.home-btnton:hover {
+  background: slateblue;
+  transition: 2s;
+}
 /* Produnt section */
 .shop {
   margin-top: 7rem;
@@ -204,8 +254,30 @@ p {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px !important;
 }
+.section-title {
+  max-width: 1100px;
+  text-align: center;
+  margin: 0 auto 70px;
+  font-size: 40px;
+  position: relative;
+  color: #555;
+  line-height: 60px;
+  margin-top: 20px;
+}
+.section-title::after {
+  content: "";
+  background: coral;
+  position: absolute;
+  width: 120px;
+  height: 5px;
+  bottom: 0;
+  left: 50%;
+  border-radius: 5px;
+  transform: translateX(-50%);
+}
 .product-details {
-  width: 350px;
+  cursor: pointer;
+  width: 300px;
   position: relative;
   box-sizing: border-box;
   box-shadow: 5px 3px 4px 5px hsla(0, 3%, 3%, 0.3);
@@ -300,22 +372,77 @@ button:hover {
   transform: translateX(-50%);
 }
 .product-latest-details {
-  width: 350px;
+  width: 320px;
   position: relative;
   box-sizing: border-box;
   box-shadow: 5px 3px 4px 5px hsla(0, 3%, 3%, 0.3);
   border-radius: 10px;
-  transition: transform 0.5s;
+  transition: transform 0.ss;
 }
 .product-latest-details:hover {
   transform: translateY(-7px);
   cursor: pointer;
 }
 
+/* Dresses section  */
+
+.latest-section {
+  max-width: 1100px;
+  margin: auto;
+  align-items: center;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px !important;
+}
+.latest-section .Dresses-details {
+  transition: transform 0.5s;
+}
+.latest-section .Dresses-details:hover {
+  transform: translateY(-7px);
+  cursor: pointer;
+}
+.product-header {
+  max-width: 1100px;
+  text-align: center;
+  margin: 0 auto 70px;
+  font-size: 40px;
+  position: relative;
+  color: #555;
+  line-height: 60px;
+  margin-top: 20px;
+}
+.product-header::after {
+  content: "";
+  background: coral;
+  position: absolute;
+  width: 100px;
+  height: 5px;
+  bottom: 0;
+  left: 50%;
+  border-radius: 5px;
+  transform: translateX(-50%);
+} 
+.Dresses-details img {
+   height: 300px;
+   width: 320px;
+}
+.Dresses-details {
+  width: 320px;
+  position: relative;
+  box-sizing: border-box;
+  box-shadow: 5px 3px 4px 5px hsla(0, 3%, 3%, 0.3);
+  border-radius: 10px;
+  transition: transform 0.ss;
+}
+.Dresses-details:hover {
+  transform: translateY(-7px);
+  cursor: pointer;
+}
 /* testimonial */
 
 .testimonial {
-  width: 1100px;
+  width: 1080px;
   margin: auto;
 }
 .row {
@@ -349,13 +476,52 @@ button:hover {
   font-size: 18px;
 }
 
+/* Contact page  */
+#Contact {
+    padding: 10px;
+}
+#Contact  .container  {
+  margin-top: 25px;
+  border: 1px gray solid;
+}
+#Contact h3 {
+  text-align: center;
+  font-size: 2rem;
+} 
+hr {
+  width: 70px;
+  height: 5px;
+  background-color: coral;
+  margin: auto;
+}
+#Contact .form-group label{
+  font-size: 18px;
+   padding: 5px 10px;
+   color: black;
+   font-weight: 400;
+}
+.form-control input{
+   padding: 5px 10px;
+}
+.form-text {
+  padding: 0 10px;
+  color: #fd4646;
+}
+.mb-3{
+  padding: 5px 10px;
+}
+.invalid-feedback {
+  color: #fd4646;
+}
 /* Footer section */
 .footer {
+  width: 1080px;
+  margin: auto;
   background: #000;
   color: #8a8a8a;
-  padding: 30px 0 20px;
+  padding: 30px 10px 20px;
   font-size: 14px;
-  margin-top: 70px;
+  /* margin-top: 70px; */
 }
 .footer-row {
   display: grid;
