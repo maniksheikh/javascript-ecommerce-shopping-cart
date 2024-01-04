@@ -38,7 +38,7 @@ body {
   padding: 0 30px;
   position: fixed;
   top: 0;
-  max-width: 1080px;
+  max-width: 1070px;
   width: 100%;
   margin: auto;
   background-color: #f3ecec;
@@ -192,15 +192,16 @@ p {
 /* Home section  */
 #home {
   background-image: url(/img/homesection-img.jpeg);
-  width: 100%;
+  width: 95%;
   height: 70vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top 60px center;
    position: relative;
+   margin: auto;
 }
 #home .container-section {
-  width: 1080px;
+  width: 1070px;
   margin: auto;
   align-items: flex-start;
   justify-content: center;
@@ -250,7 +251,7 @@ p {
   margin-bottom: 2rem;
 }
 .shop-content {
-  max-width: 1100px;
+  max-width: 1080px;
   margin: auto;
   align-items: center;
   justify-items: center;
@@ -340,7 +341,7 @@ button:hover {
 
 /* latest section */
 .latest-section {
-  max-width: 1100px;
+  max-width: 1080px;
   margin: auto;
   align-items: center;
   justify-items: center;
@@ -392,8 +393,8 @@ button:hover {
 /* Banner section */
 #banner {
   background-image: url(/img/banner-img.jpg);
-  width: 100%;
-  height: 90vh;
+  width: 95%;
+  height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -402,6 +403,7 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  margin: auto;
 }
 #banner h1 span {
   color: #fb774b;
@@ -431,7 +433,7 @@ button:hover {
   margin-top: 20px;
   align-items: flex-start;
 }
-btnton:hover {
+button:hover {
 background: slateblue;
 transition: 2s;
 }
@@ -494,7 +496,7 @@ transition: 2s;
 /* testimonial */
 
 .testimonial {
-  width: 1080px;
+  width: 1040px;
   margin: auto;
 }
 .row {
@@ -533,7 +535,7 @@ transition: 2s;
   margin-top: 2rem;
 }
 .container {
-  width: 1080px;
+  width: 1070px;
   margin: auto;
   border-radius: 5px;
   /* background-color: #f2f2f2; */
@@ -587,7 +589,7 @@ input[type=submit]:hover {
 
 /* Footer section */
 .footer {
-  width: 1080px;
+  width: 1050px;
   margin: auto;
   background: #000;
   color: #8a8a8a;
@@ -664,7 +666,7 @@ ul {
     left: 0;
     width: 100%;
     overflow: hidden;
-    transition: max-height 0.5s;
+    transition: 0.5s;
   }
   nav ul li {
     display: block;
@@ -740,6 +742,43 @@ ul {
     width: 50px;
     height: 50px;
   }
+  nav ul {
+    position: absolute;
+    background: #333;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin-right: 50px;
+    margin-top:5px;
+    margin-bottom: 10px;
+  }
+  nav ul li a {
+    color: #fff;
+  }
+  .menu-img {
+    display: block;
+    cursor: pointer;
+  }
+  #home {
+    margin: auto;
+    height: 45vh;
+    width: 45%;
+  }
+
+  #home .container-section {
+    margin-top: 9rem;
+  }
+  #banner {
+    margin: auto;
+    height: 45vh;
+    width: 100%;
+  }
+
   .section-title {
     font-size: 1.1rem;
     margin-top: -12px;
@@ -778,11 +817,16 @@ ul {
     margin: auto;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+
   }
   .testimonial-section .row .col-3 {
     text-align: center;
     align-items: center;
     justify-content: center;
+
+  }
+  #Contact .container {
+    width: 500px;
   }
   .footer {
     width: 300px;
