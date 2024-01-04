@@ -16,10 +16,10 @@
           </div>
           <nav>
             <ul id="MenuItems">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Products</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#banner">About</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#Contact">Contact</a></li>
               <li><a href="#">Account</a></li>
             </ul>
           </nav>
@@ -52,7 +52,7 @@
     </header>
 
     <section id="home">
-      <div class="container">
+      <div class="container-section">
         <h5>NEW ARRIVALS</h5>
         <h1><span>Best Price</span> This Year</h1>
         <p>
@@ -470,7 +470,21 @@
       </div>
     </div>
     <br />
-    <h2 class="product-header">Latest Products</h2>
+
+ <!-- Banner section  -->
+ <section id="banner">
+  <div class="banner-container">
+    <h4>MID SEASON`s SALE</h4>
+    <h1>
+      <span>Autmn Collection </span><br />
+      UP To 40% OFF.
+    </h1>
+    <button class="home-btn">Shop Now</button>
+  </div>
+</section>
+
+<div id="products">
+  <h2 class="product-header">Latest Products</h2>
     <div class="container">
       <div class="latest-section">
         <div class="product-latest-details">
@@ -565,6 +579,8 @@
         </div>
       </div>
     </div>
+</div>
+    
     <br />
     <div class="container">
       <h2 class="product-header">Dresses & Update Products</h2>
@@ -869,34 +885,34 @@
     </div>
 
      <!-- Contact page  -->
-     <form id="Contact">
-      <div class="container">
-        <h3 >Contact Form</h3>
-        <hr>
-        <div class="form-group">
-          <label for="exampleInputEmail1">Email address :</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"> <br>
-          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Password :</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-        </div>
-        <div class="mb-3">
-          <label for="validationTextarea">Textarea</label>
-          <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" required></textarea> <br>
-          <div class="invalid-feedback">
-            Please enter a message in the textarea.
-          </div>
-        <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <button type="submit" class="btn btn-primary mb-4">Submit</button>
-      </div>
-      </div>
-    </form>
+     <div id="Contact">
+     <h3>Contact Form</h3>
+     <hr>
+     <div class="container">
+       <form action="/action_page.php">
+         <label for="fname">First Name</label>
+         <input type="text" id="fname" name="firstname" placeholder="Your name..">
+     
+         <label for="email">Email </label>
+         <input type="text" id="email" name="email" placeholder="Insert your email">
 
+         <label for="password">Password </label>
+         <input type="password" id="password" name="password" placeholder="Insert your password"> <br>
+
+         <label for="country">Country</label>
+         <select id="country" name="country">
+           <option value="australia">Bangladesh</option>
+           <option value="canada">Canada</option>
+           <option value="usa">USA</option>
+         </select>
+     
+         <label for="subject">Subject</label>
+         <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+     
+         <input type="submit" value="Submit">
+       </form>
+     </div>
+    </div>
     <!-- Footer Section  -->
     <div class="footer">
       <div class="container">
